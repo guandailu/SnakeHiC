@@ -32,8 +32,11 @@ The "cluster.yaml" contains using resource configuration, icnlduing computationa
 
 ## Running the pipeline
 The pipeline can be run with this command in your working directory:
+```
+snakemake -j 30 -cluster-config cluster.yaml -s Snakefile --configfile config.yaml --use-conda
+```
+The ```-j``` option specifies how many tasks you want to run in parallel. The ```-s``` argument is the "Snakefile" file
 
-
-
-
+## Results
+All generated results will be put in corresponding directories. I have ordered directories with numbers.
 
