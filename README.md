@@ -8,8 +8,10 @@ Currently, the pipeline only supports High Performance Computing (HPC) platform.
 ## Setting up pipeline
 ```bash
 git clone git@github.com:FarmOmics/SnakeHiC.git
+
+cd SnakeHiC
 ```
 
 ## Setting up data
-Raw paired-end fastq files should be put in a directory with name of "01_raw_fq". In file "sample.list"
-Create a directory that will be the working directory for the pipeline. You will move your raw data into this folder, and the pipeline will populate it with many other folders containing results, analyses, etc.
+Raw paired-end fastq files should be put in a directory with name of "01_raw_fq". In the "sample.txt", your sample information should be provided, including two coloumns: LibraryID and SampleID. If your each sample only has one library, two coloumns will be same. Raw paired-end fastq files should be named as ```LibraryID_R1.fq.gz``` and ```LibraryID_R2.fq.gz```
+
