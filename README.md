@@ -26,3 +26,14 @@ sample_file: sample.txt  ## /path/to/sample.txt, usually in current dorectory
 jucier: juicer_1.22.01.jar  ## juicer should be separaley downloaded and provide full path here
 resolutions: ["500", "1000", "5000", "10000", "25000", "50000", "100000", "250000", "500000", "1000000"] ### resolutions you want to include in generated ".hic" file
 ```
+
+## Configuring source file
+The "cluster.yaml" contains using resource configuration, icnlduing computational nodes, memory and threads. These configurations should be changed according to your HPC platform.
+
+## Running the pipeline
+The pipeline can be run with this command in your working directory:
+
+
+
+
+
