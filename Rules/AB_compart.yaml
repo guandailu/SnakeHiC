@@ -1,0 +1,11 @@
+rule AB_compart:
+    input:
+        hic = "06_contact_map/{sample}.contact_map.hic",
+        ref_fa = REF_FASTA
+    output:
+        ab = "08_AB_compart/{sample}.ab",
+        bed = "08_AB_compart/{sample}.AB.bed"
+    threads: 1
+    params:
+    shell:
+        "/home/dguan/.local/bin/fanc compartments -g {input.ref_fa} -v {output.bed} {input.hic}@5000 {output.ab}"
