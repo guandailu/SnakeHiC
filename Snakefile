@@ -11,9 +11,9 @@ TEMP = config["temp"]
 JUCIER = config["jucier"]
 RESOLUTIONS = config["resolutions"]
 sample_file = config["sample_file"]
-sample_df = pd.read_csv("sample.list", sep="\t", header=0)
-SAMPLES=sample_df["SampleName"].tolist()
-FSAMPLES=np.unique(np.array(sample_df["Sample"].tolist()))
+sample_df = pd.read_csv(sample_file, sep="\t", header=0)
+SAMPLES=sample_df["LibraryID"].tolist()
+FSAMPLES=np.unique(np.array(sample_df["SampleID"].tolist()))
 sample = SAMPLES
 res = RESOLUTIONS
 
