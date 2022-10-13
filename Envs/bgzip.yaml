@@ -1,0 +1,5 @@
+name: htlib
+channels:
+  - bioconda
+dependencies:
+  - htslib
