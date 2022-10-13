@@ -1,0 +1,5 @@
+name: mustache
+channels:
+  - jrhawley
+dependencies:
+  - mustache-hic=1.2.0

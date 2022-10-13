@@ -1,0 +1,8 @@
+name: pairix
+channels:
+  - bioconda
+  - r
+  - conda-forge
+  - defaults
+dependencies:
+  - pairix=0.3.7
