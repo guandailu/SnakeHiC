@@ -1,4 +1,4 @@
-workdir: MicroC
+workdir: /path/to/SnakeHiC
 reffa: Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna_sm.toplevel.chr.fa
 chrom_size: Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna_sm.toplevel.chr.fa.genome
 temp: tmp
