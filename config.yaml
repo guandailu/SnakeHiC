@@ -1,7 +1,7 @@
-workdir: /group/hjzhou98grp/dguan/microc/MicroC
-reffa: /group/hjzhou98grp/dguan/microc/MicroC/00_ref/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna_sm.toplevel.chr.fa
-chrom_size: /group/hjzhou98grp/dguan/microc/MicroC/00_ref/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna_sm.toplevel.chr.fa.genome
-temp: /group/hjzhou98grp/dguan/microc/MicroC/tmp
-sample_file: /group/hjzhou98grp/dguan/microc/MicroC/sample.list
-jucier: /home/dguan/bin/MicroC/juicer_1.22.01.jar
+workdir: MicroC
+reffa: Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna_sm.toplevel.chr.fa
+chrom_size: Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna_sm.toplevel.chr.fa.genome
+temp: tmp
+sample_file: sample.list
+jucier: juicer_1.22.01.jar
 resolutions: ["500", "1000", "5000", "10000", "25000", "50000", "100000", "250000", "500000", "1000000"]
