@@ -35,7 +35,8 @@ The pipeline can be run with this command in your working directory:
 ```
 snakemake -j 30 -cluster-config cluster.yaml -s Snakefile --configfile config.yaml --use-conda
 ```
-The ```-j``` option specifies how many tasks you want to run in parallel. The ```-s``` argument is the "Snakefile" file
+The ```-j``` option specifies how many tasks you want to run in parallel. The ```-s``` argument is the "Snakefile" file. You could test the pipeline with a dry-run model by adding "-n" option. This will not run the pipeline, but check all codes used. In addition, you can also include "-p" to print commands of all steps.
+
 
 ## Results
 All generated results will be put in corresponding directories. I have ordered directories with numbers.
