@@ -39,5 +39,5 @@ The ```-j``` option specifies how many tasks you want to run in parallel. The ``
 
 
 ## Results
-All generated results will be put in corresponding directories. I have ordered directories with numbers.
+All generated results will be put in corresponding directories.
 
