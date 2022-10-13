@@ -1,0 +1,99 @@
+__default__:
+  partition: "bmh"
+  nodes: 1
+  cpus: "{threads}"
+  mem: 24G
+  name: "{rule}.%j"
+  error: "Logs/{rule}.%j.err"
+  output: "Logs/{rule}.%j.out"
+  time: "20-0"
+  mail-type: FAIL,TIME_LIMIT
+  mail-user: dguan@ucdavis.edu
+
+
+trim_reads:
+  partition: "bmh"
+  mem: 32G
+  time: 3-0
+  cpus: 16
+
+bwa_mem:
+  partition: "bmh"
+  mem: 24G
+  time: 3-0
+
+parse_bam:
+  partition: "bmh"
+  mem: 24G
+  time: 3-0
+  cpus: 16
+
+sort_parse:
+  partition: "bmh"
+  mem: 24G
+  time: 3-0
+
+dedup_sam:
+  partition: "bmh"
+  mem: 24G
+  time: 3-0
+  cpus: 16
+merge_libs:
+  mem: 120G
+  cpu: 16
+  partition: "bmh"
+
+split_sam:
+  partition: "bmh"
+  mem: 64G
+  time: 3-0
+  cpus: 16
+
+sort_bam:
+    partition: "bmh"
+    mem: 24G
+    time: 3-0
+
+get_qc:
+  partition: "bmh"
+  mem: 24G
+  time: 3-0
+
+lib_compx:
+  partition: "bmh"
+  mem: 120G
+  time: 3-0
+
+cont_map:
+  partition: "bmh"
+  mem: 24G
+  time: 3-0
+
+cooler_matrix:
+  partition: "bmh"
+  mem: 120G
+  time: 3-0
+
+AB_compart:
+  partition: "bmh"
+  mem: 240G
+  time: 3-0
+
+call_tad:
+  partition: "high"
+  mem: 24G
+  time: 3-0
+
+call_loop:
+  partition: "bmh"
+  mem: 32G
+  time: 3-0
+
+compart_plot:
+  partition: "bmh"
+  mem: 64G
+  time: 3-0        
+mul_res_matrix:
+  partition: "bmh"
+  mem: 64G
+  time: 20-0
