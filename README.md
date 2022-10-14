@@ -1,7 +1,7 @@
 # SnakeHiC
 A snakemake-based pipeline for processing HiC data.
 
-This is a work-in-progress. Documentation is currently very brief and minimal. 
+This is a work-in-progress. Documentation is currently very brief. Comments welcome!
 
 Currently, the pipeline only supports High Performance Computing (HPC) platform.
 
